@@ -43,7 +43,7 @@ page, provenance, and uncertainties, then choose **Preview this unreviewed plan*
 **Play**. Camera orbit and scrubbing remain independent of the motion. The fixture
 button is separate and explicitly hand-authored.
 
-Evaluation envelopes are under ignored `data/animation-runs/`; reviews are separate
+Evaluation envelopes are under versioned `data/animation-runs/`; reviews are separate
 `.review.json` files. The saved-result route adds current checks and the sidecar review
 without overwriting the original envelope. Later provider final-answer audits are in
 ignored `data/provider-responses/`. Credentials and reasoning traces are not included.

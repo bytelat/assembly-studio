@@ -1,0 +1,11 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "Node 2 now approaches from the open negative-parent-Y exterior face rather than through the cabinet interior. Its source identity and approach side were supplied as separate assistant-reviewed evidence.",
+    "The sampled AABB screen no longer detects excess overlap along this translation. This is not a mesh, fitting, tool-clearance or physical assembly validation.",
+    "Initial/intermediate travel distances and seating remain inferred. The source-to-working orientation and prior seating limitations remain unresolved.",
+    "The provider describes the upper inset as a misaligned fitting attempt, but the source inset is an edge detail without a crossed-out alternative on this page. Treat its narrative as unverified; the untouched output is preserved."
+  ]
+}

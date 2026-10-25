@@ -1,0 +1,10 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "Printed step 2 is distinguished from printed step 3; the candidate retains nodes 1 and 3 and adds node 21.",
+    "Panel identity remains unresolved. The manual working orientation is not represented, so a downward diagram arrow does not establish parent-axis negative Y movement.",
+    "AABB contact does not validate insertion or collision freedom. Prior page-8 seating and mapping limitations persist. Not accepted as assembly guidance."
+  ]
+}

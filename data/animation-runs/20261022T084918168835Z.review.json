@@ -1,0 +1,11 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "The moving nodes 5 and 10 carry exactly the 141413 labels shown twice in printed step 7. The proposed approach is from the outboard negative-X side toward their recorded positions.",
+    "The keyframe-only generation schema avoided the conflicting legacy timing from the prior rejected response. Output instructions and motion remain untouched.",
+    "Exact bracket engagement, clearances, insertion depth and ordering remain inferred. These small fittings are outside the large-panel AABB screening scope.",
+    "Prior step 5 working reorientation is still a manual reference, not an animated action. No wall or optional legs were added."
+  ]
+}

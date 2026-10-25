@@ -1,0 +1,19 @@
+{
+  "decision": "not_accepted",
+  "reviewer": "coding assistant source-geometry review",
+  "human_instruction_edits": false,
+  "review": {
+    "issues": [
+      "Step 1, moving node 3: its nearest visible large component (node 21) remains 0.316 m away at the end. No apparent connection."
+    ],
+    "checks": [
+      {
+        "step": 1,
+        "moving_node": 3,
+        "nearest_visible_large_node": 21,
+        "final_bounds_gap_m": 0.315999
+      }
+    ],
+    "scope": "AABB proximity only, for components at least 0.1 m wide sharing a parent frame, using a 0.02 m threshold. This does not establish mating features, collision-free paths, or correctness."
+  }
+}

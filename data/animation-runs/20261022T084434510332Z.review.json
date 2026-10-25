@@ -1,0 +1,11 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "The eight moving nodes carry the exact source part numbers 139434 and 139435 shown four times each on printed step 6. Their movement approaches from negative parent X toward the back-panel positions.",
+    "The original final answer was schema-revalidated after adding delayed-track boundary holds. No provider JSON, instructions, paths or timing values were edited. The initial rejection and revalidation audit are both retained.",
+    "The animation represents a press/approach proposal only. Exact paired engagement, insertion depth, ordering and forces are unverified; the large-panel AABB checks do not check these small components.",
+    "The provider wording about motion along negative X is imprecise: negative start offsets move toward zero along positive X. Prior cabinet reorientation in step 5 remains a manual-only reference."
+  ]
+}

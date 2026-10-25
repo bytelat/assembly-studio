@@ -1,0 +1,73 @@
+{
+  "origin": "deepseek",
+  "review_status": "unreviewed",
+  "plan": {
+    "schema_version": 1,
+    "product_id": "eket-70332124",
+    "source_document": "AA-1914763-5",
+    "model_sha256": "726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5",
+    "manual_sha256": "35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a",
+    "coordinate_space": "source_node_parent_meters",
+    "steps": [
+      {
+        "title": "Slide the mating 35x25 side panel home",
+        "instruction": "Bring the panel identified as side panel 35x25 (1) (node 21) and the side panel 35x25 (node 3) into contact as illustrated on page 8, keeping the pre-fitted cam bolts on the panel edge aligned with the mating holes. Start with the node 3 panel backed off 0.12 m along its outward face normal and translate it smoothly toward its finished position until the offsets reach zero, as if pressing the two panels together. Do not add rotation, and do not force the panels if the fittings do not line up.",
+        "source_pages": [
+          8
+        ],
+        "duration_seconds": 3.0,
+        "visible_node_ids": [
+          3,
+          8,
+          13,
+          21
+        ],
+        "tracks": [
+          {
+            "node_index": 3,
+            "from_offset_m": [
+              0.0,
+              0.0,
+              -0.12
+            ],
+            "to_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "from_rotation_deg": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "to_rotation_deg": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "start_fraction": 0.0,
+            "end_fraction": 1.0
+          }
+        ],
+        "warnings": [
+          "Unreviewed animation proposal derived from a single illustration; it is not a verified assembly procedure.",
+          "The manual does not state any travel distance, force, or number of turns; the 0.12 m approach distance is a visual choice only.",
+          "Stop if the cam fittings do not enter freely; do not force or over-tighten parts."
+        ],
+        "uncertainties": [
+          "Inferred mapping: the two equal 35x25 panels drawn on page 8 are taken to be node 3 ('side panel 35x25') and node 21 ('side panel 35x25 (1)'); the illustration gives no labels tying them to those nodes.",
+          "Inferred motion path: the horizontal 'press together' arrow is interpreted as translation along the parent +Z axis of node 3, i.e. along that panel's face normal, with the node 21 panel held fixed.",
+          "Magnitude of the start displacement (0.12 m) is arbitrary; the page provides no dimension or gap value, and in the finished model the two side panels remain about 0.35 m apart, so the drawn 'touching' configuration does not literally reproduce the authored geometry.",
+          "The lower-right inset showing a downward press to lock the cams is not animated; it would need an additional translation or rotation whose axis and amount cannot be derived from the page or the model.",
+          "The cam bolts/locks (nodes 8 and 13 among others) are already in their finished positions in the source model, so the insertion of fittings into the panel edges is not shown and is assumed pre-done.",
+          "Visible fittings chosen (nodes 8 and 13) are only the nearest cam parts to the node 3 edge; other identical fittings are hidden for clarity, which is a presentation choice, not a sourcing fact."
+        ]
+      }
+    ]
+  },
+  "validation": "Structure, source hashes, node references, page bounds, and docking endpoints checked. Physical correctness and collision-free paths are not established.",
+  "human_edits": [],
+  "model": "deepseek-flash",
+  "reason": "Page 8 shows two equal-size 35x25 panels being brought face/edge together over pre-fitted cam fittings and pressed closed with a horizontal arrow. The only node pair in the inventory that matches two identical 35x25 panels opposing one another is node 3 ('side panel 35x25', at z = -0.175) and node 21 ('side panel 35x25 (1)', at z = +0.175). A single, cautious step is therefore proposed: start the node 3 panel displaced outward along its parent +Z normal and slide it in to its authored finished position, matching the illustrated 'press the panels together' arrow. The downward 'lock' inset and the cam-fitting insertion are not animated because they would require claiming unstated travel distances or rotation counts. This is an unreviewed geometric proposal, not a claim of procedural correctness.",
+  "provider_output": "{\"can_propose\": true, \"reason\": \"Page 8 shows two equal-size 35x25 panels being brought face/edge together over pre-fitted cam fittings and pressed closed with a horizontal arrow. The only node pair in the inventory that matches two identical 35x25 panels opposing one another is node 3 ('side panel 35x25', at z = -0.175) and node 21 ('side panel 35x25 (1)', at z = +0.175). A single, cautious step is therefore proposed: start the node 3 panel displaced outward along its parent +Z normal and slide it in to its authored finished position, matching the illustrated 'press the panels together' arrow. The downward 'lock' inset and the cam-fitting insertion are not animated because they would require claiming unstated travel distances or rotation counts. This is an unreviewed geometric proposal, not a claim of procedural correctness.\", \"plan\": {\"schema_version\": 1, \"product_id\": \"eket-70332124\", \"source_document\": \"AA-1914763-5\", \"model_sha256\": \"726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5\", \"manual_sha256\": \"35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a\", \"coordinate_space\": \"source_node_parent_meters\", \"steps\": [{\"title\": \"Slide the mating 35x25 side panel home\", \"instruction\": \"Bring the panel identified as side panel 35x25 (1) (node 21) and the side panel 35x25 (node 3) into contact as illustrated on page 8, keeping the pre-fitted cam bolts on the panel edge aligned with the mating holes. Start with the node 3 panel backed off 0.12 m along its outward face normal and translate it smoothly toward its finished position until the offsets reach zero, as if pressing the two panels together. Do not add rotation, and do not force the panels if the fittings do not line up.\", \"source_pages\": [8], \"duration_seconds\": 3.0, \"visible_node_ids\": [3, 8, 13, 21], \"tracks\": [{\"node_index\": 3, \"from_offset_m\": [0.0, 0.0, -0.12], \"to_offset_m\": [0.0, 0.0, 0.0], \"from_rotation_deg\": [0.0, 0.0, 0.0], \"to_rotation_deg\": [0.0, 0.0, 0.0], \"start_fraction\": 0.0, \"end_fraction\": 1.0}], \"warnings\": [\"Unreviewed animation proposal derived from a single illustration; it is not a verified assembly procedure.\", \"The manual does not state any travel distance, force, or number of turns; the 0.12 m approach distance is a visual choice only.\", \"Stop if the cam fittings do not enter freely; do not force or over-tighten parts.\"], \"uncertainties\": [\"Inferred mapping: the two equal 35x25 panels drawn on page 8 are taken to be node 3 ('side panel 35x25') and node 21 ('side panel 35x25 (1)'); the illustration gives no labels tying them to those nodes.\", \"Inferred motion path: the horizontal 'press together' arrow is interpreted as translation along the parent +Z axis of node 3, i.e. along that panel's face normal, with the node 21 panel held fixed.\", \"Magnitude of the start displacement (0.12 m) is arbitrary; the page provides no dimension or gap value, and in the finished model the two side panels remain about 0.35 m apart, so the drawn 'touching' configuration does not literally reproduce the authored geometry.\", \"The lower-right inset showing a downward press to lock the cams is not animated; it would need an additional translation or rotation whose axis and amount cannot be derived from the page or the model.\", \"The cam bolts/locks (nodes 8 and 13 among others) are already in their finished positions in the source model, so the insertion of fittings into the panel edges is not shown and is assumed pre-done.\", \"Visible fittings chosen (nodes 8 and 13) are only the nearest cam parts to the node 3 edge; other identical fittings are hidden for clarity, which is a presentation choice, not a sourcing fact.\"]}]}}"
+}

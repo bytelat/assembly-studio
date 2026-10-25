@@ -38,7 +38,7 @@ The user asked how to advance to the next step. EKET currently has **one partial
 - `app/geometry_checks.py`: AABB contact heuristics only; passing does not establish correct assembly, collision freedom, or manual fidelity.
 - EKET manual: `web/assets/eket/manual.pdf`, AA-1914763-5, 20 pages. Page 7 inventory; PDF page 8 printed step 1; PDF page 9 printed steps 2 and 3. Source CAD has 21 component nodes: five panels and sixteen hardware nodes. This is not a verified physical inventory.
 - Latest candidate moves top node 1 from `[0,0,0.05]` to zero with side node 3 visible. The described downward seating press is absent from animation. Exact panel identity, direction, and working orientation remain uncertain.
-- Raw provider responses: ignored `data/provider-responses/`; saved envelopes and separate review sidecars: ignored `data/animation-runs/`. Preserve originals. JSON edits must be relabeled; composed drafts must disclose composition and retain review limitations.
+- Raw provider responses: ignored `data/provider-responses/`; saved envelopes and separate review sidecars: versioned `data/animation-runs/`. Preserve originals. JSON edits must be relabeled; composed drafts must disclose composition and retain review limitations.
 - Original assets: https://github.com/IKEA/IKEA3DAssemblyDataset at commit `2c3f453a7ed7e3a056939ecca6a888ccfaf5695c`, CC BY-NC-SA 4.0. Keep attribution and noncommercial restrictions visible in project documentation.
 
 ## Running and testing

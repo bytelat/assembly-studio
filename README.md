@@ -134,3 +134,7 @@ runtime operation without webpack or CDN access. The EKET viewer uses one fixed-
 bundle response to reduce module-loading stalls through forwarded connections.
 
 DALFRED bar stool is available at `/dalfred.html`, linked from the product selector. It uses the original pinned IKEA 60155602 geometry and manual AA-399492-11, with nine manual steps and eight explicitly authored partial motion drafts. See `web/assets/dalfred/reference.json` for original sources/hashes. Rebuild its local guide with `PYTHONPATH=. .venv/bin/python scripts/build_dalfred_guide.py`. Tightening, hammering, working orientation and seat-height adjustment remain incomplete; this is not verified assembly guidance.
+
+## Preserved animation data
+
+The current guides, saved animation candidates, candidate manifest, and separate reviews in `data/animation-runs/` are versioned for offline replay and guide rebuilding. They retain their original provenance and review limitations. New run files are ignored until explicitly selected for inclusion. Raw provider responses in `data/provider-responses/` remain local and ignored.

@@ -58,7 +58,7 @@ hand-authored example is in `fixtures/eket-player-fixture.json`.
 - **Validate and preview edited JSON** labels the result `origin: imported_json` and
   records user import in `human_edits`; it does not retain an AI authorship claim.
 - Download saves the plan together with its provenance, review status, and validation
-  notice. The generator preserves provider final-answer text, completion status, and token usage under ignored `data/provider-responses` for diagnosis, without API keys, request headers, or reasoning traces. Complete evaluation envelopes are explicitly saved by `scripts/generate_step.py` under ignored `data/animation-runs`; the saved-result button reads those without a new provider call. Manual edits are not automatically persisted.
+  notice. The generator preserves provider final-answer text, completion status, and token usage under ignored `data/provider-responses` for diagnosis, without API keys, request headers, or reasoning traces. Complete evaluation envelopes are explicitly saved by `scripts/generate_step.py` under versioned `data/animation-runs`; the saved-result button reads those without a new provider call. Manual edits are not automatically persisted.
 
 Structural checks reject unknown part IDs, wrong hashes/manual revisions, out-of-range
 pages, non-finite/bounded motion values, duplicate tracks, hidden moving parts, and

@@ -1,0 +1,10 @@
+{
+  "decision": "not_accepted",
+  "reviewer": "coding assistant manual/source comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "Printed step 3 shows a thin panel sliding into grooves with a groove-position detail. The source back panel node 4 is approximately 2.5 mm thick. The provider instead selects thick bottom panel node 2 and leaves the thin panel for a later action. This does not support the depicted part identity.",
+    "AABB contact cannot establish that the selected panel follows the groove action. Do not use this proposal as the prior state for printed step 4.",
+    "No automatic paid retry was made; later steps remain source-diagram references until part identity and working orientation are resolved."
+  ]
+}

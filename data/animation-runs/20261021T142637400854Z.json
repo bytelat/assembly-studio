@@ -1,0 +1,86 @@
+{
+  "origin": "deepseek",
+  "review_status": "unreviewed",
+  "plan": {
+    "schema_version": 1,
+    "product_id": "eket-70332124",
+    "source_document": "AA-1914763-5",
+    "model_sha256": "726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5",
+    "manual_sha256": "35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a",
+    "coordinate_space": "source_node_parent_meters",
+    "steps": [
+      {
+        "title": "Bring side panel 35x25 (1) into engagement with the cabinet body",
+        "instruction": "With the body of the cabinet (top panel, bottom panel and back panel) held steady, take side panel 35x25 (1) with its pre-mounted cam fittings facing the cabinet body and hold it offset outward from the body. Slide the panel straight toward the cabinet body along the direction of the fittings until its edges meet the top panel, bottom panel and back panel, so that the pre-mounted cams line up with their mating holes. Keep the panel square to the body while sliding; do not tilt or force it. The panel must finish flush against the body with no gap. Before sliding, check the cam orientation as shown in the crossed-out inset on page 8 and rotate any cam that is not in the correct position. Do not tighten or turn any fitting to a specified amount in this step; the manual does not state a torque or turn count on this page.",
+        "source_pages": [
+          8
+        ],
+        "duration_seconds": 4.0,
+        "visible_node_ids": [
+          1,
+          2,
+          4,
+          21
+        ],
+        "tracks": [
+          {
+            "node_index": 21,
+            "from_offset_m": [
+              0.0,
+              0.0,
+              0.14
+            ],
+            "to_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "from_rotation_deg": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "to_rotation_deg": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "start_fraction": 0.0,
+            "end_fraction": 1.0
+          }
+        ],
+        "warnings": [
+          "Unreviewed animation proposal, not a correctness claim; verify against the printed manual before use.",
+          "Do not force or hammer the panel: page 8 shows a free sliding fit, and forcing may damage the edges or the pre-mounted fittings.",
+          "No torque value, turn count or fastening specification is given on page 8; do not invent one.",
+          "The cam fitting nodes (5-20) are shown in their final positions and are not animated in this step.",
+          "All motion must end at zero offset and zero rotation, matching the finished assembly transforms."
+        ],
+        "uncertainties": [
+          "The mapping of the two illustrated panels on page 8 to source nodes is inferred: node 21 (side panel 35x25 (1)) is treated as the moving panel and nodes 1 (top), 2 (bottom) and 4 (back) as the stationary mating panels, based on the zero-gap contact candidates; the illustration is schematic and does not label parts.",
+          "The illustrated corner joint on page 8 could correspond to a different panel pair (for example the other side panel, node 3, approached along -Z); this alternative is not animated.",
+          "The starting displacement of 0.14 m along +Z is an illustrative clearance, not a dimension printed in the manual.",
+          "The downward press shown in the lower-right detail of page 8 is not modeled as separate motion; it is assumed to be the final seating of the same sliding action and may actually be a distinct later step.",
+          "Whether the illustrated pre-mounted fittings correspond to model nodes 141413_01/_02 (nodes 5 and 10) or to 139434/139435 fittings (nodes 6-9, 11, 13, 15, 17) cannot be determined from the drawing alone, so no fitting node is animated."
+        ]
+      }
+    ]
+  },
+  "validation": "Structure, source hashes, node references, page bounds, and docking endpoints checked. Physical correctness and collision-free paths are not established.",
+  "human_edits": [],
+  "model": "deepseek-flash",
+  "reason": "Page 8 (step 1) shows a linear joining motion: a panel carrying pre-mounted cam fittings is brought horizontally against a mating panel/frame until the fittings engage, then pressed home. This can be supported by the source model as a straight-line approach of one large panel toward panels it actually contacts at zero offset. The only duplicate large panel in the inventory is node 21 (\"side panel 35x25 (1)\"), and large_component_contact_candidates confirms it ends in contact with nodes 1, 2 and 4 (gap 0.0), so a slide along the parent Z axis into contact is geometrically legitimate. The closing press shown in the figure is not modeled as a second step (only one step is permitted) and is flagged as an uncertainty, as is the exact approach distance and the node-to-illustration mapping.",
+  "provider_output": "{\"can_propose\": true, \"reason\": \"Page 8 (step 1) shows a linear joining motion: a panel carrying pre-mounted cam fittings is brought horizontally against a mating panel/frame until the fittings engage, then pressed home. This can be supported by the source model as a straight-line approach of one large panel toward panels it actually contacts at zero offset. The only duplicate large panel in the inventory is node 21 (\\\"side panel 35x25 (1)\\\"), and large_component_contact_candidates confirms it ends in contact with nodes 1, 2 and 4 (gap 0.0), so a slide along the parent Z axis into contact is geometrically legitimate. The closing press shown in the figure is not modeled as a second step (only one step is permitted) and is flagged as an uncertainty, as is the exact approach distance and the node-to-illustration mapping.\", \"plan\": {\"schema_version\": 1, \"product_id\": \"eket-70332124\", \"source_document\": \"AA-1914763-5\", \"model_sha256\": \"726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5\", \"manual_sha256\": \"35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a\", \"coordinate_space\": \"source_node_parent_meters\", \"steps\": [{\"title\": \"Bring side panel 35x25 (1) into engagement with the cabinet body\", \"instruction\": \"With the body of the cabinet (top panel, bottom panel and back panel) held steady, take side panel 35x25 (1) with its pre-mounted cam fittings facing the cabinet body and hold it offset outward from the body. Slide the panel straight toward the cabinet body along the direction of the fittings until its edges meet the top panel, bottom panel and back panel, so that the pre-mounted cams line up with their mating holes. Keep the panel square to the body while sliding; do not tilt or force it. The panel must finish flush against the body with no gap. Before sliding, check the cam orientation as shown in the crossed-out inset on page 8 and rotate any cam that is not in the correct position. Do not tighten or turn any fitting to a specified amount in this step; the manual does not state a torque or turn count on this page.\", \"source_pages\": [8], \"duration_seconds\": 4.0, \"visible_node_ids\": [1, 2, 4, 21], \"tracks\": [{\"node_index\": 21, \"from_offset_m\": [0.0, 0.0, 0.14], \"to_offset_m\": [0.0, 0.0, 0.0], \"from_rotation_deg\": [0.0, 0.0, 0.0], \"to_rotation_deg\": [0.0, 0.0, 0.0], \"start_fraction\": 0.0, \"end_fraction\": 1.0}], \"warnings\": [\"Unreviewed animation proposal, not a correctness claim; verify against the printed manual before use.\", \"Do not force or hammer the panel: page 8 shows a free sliding fit, and forcing may damage the edges or the pre-mounted fittings.\", \"No torque value, turn count or fastening specification is given on page 8; do not invent one.\", \"The cam fitting nodes (5-20) are shown in their final positions and are not animated in this step.\", \"All motion must end at zero offset and zero rotation, matching the finished assembly transforms.\"], \"uncertainties\": [\"The mapping of the two illustrated panels on page 8 to source nodes is inferred: node 21 (side panel 35x25 (1)) is treated as the moving panel and nodes 1 (top), 2 (bottom) and 4 (back) as the stationary mating panels, based on the zero-gap contact candidates; the illustration is schematic and does not label parts.\", \"The illustrated corner joint on page 8 could correspond to a different panel pair (for example the other side panel, node 3, approached along -Z); this alternative is not animated.\", \"The starting displacement of 0.14 m along +Z is an illustrative clearance, not a dimension printed in the manual.\", \"The downward press shown in the lower-right detail of page 8 is not modeled as separate motion; it is assumed to be the final seating of the same sliding action and may actually be a distinct later step.\", \"Whether the illustrated pre-mounted fittings correspond to model nodes 141413_01/_02 (nodes 5 and 10) or to 139434/139435 fittings (nodes 6-9, 11, 13, 15, 17) cannot be determined from the drawing alone, so no fitting node is animated.\"]}]}}",
+  "geometry_review": {
+    "issues": [],
+    "checks": [
+      {
+        "step": 1,
+        "moving_node": 21,
+        "nearest_visible_large_node": 1,
+        "final_bounds_gap_m": 0.0
+      }
+    ],
+    "scope": "AABB proximity only, for components at least 0.1 m wide sharing a parent frame, using a 0.02 m threshold. This does not establish mating features, collision-free paths, or correctness."
+  }
+}

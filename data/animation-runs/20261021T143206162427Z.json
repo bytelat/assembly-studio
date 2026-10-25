@@ -1,0 +1,86 @@
+{
+  "origin": "deepseek",
+  "product_id": "eket-70332124",
+  "review_status": "unreviewed",
+  "plan": {
+    "schema_version": 1,
+    "product_id": "eket-70332124",
+    "source_document": "AA-1914763-5",
+    "model_sha256": "726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5",
+    "manual_sha256": "35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a",
+    "coordinate_space": "source_node_parent_meters",
+    "steps": [
+      {
+        "title": "Slide top panel onto side panel edge and seat the connector fittings",
+        "instruction": "Keep the side panel (node 3) in its final position and bring the top panel (node 1) to it horizontally, moving along the parent-coordinate Z direction until the panel edge meets the side panel edge and the protruding connector hardware engages the keyhole slots, as shown in the large drawing and the lower-left detail (left-pointing arrow). Follow the upper-left inset: the fittings must be aligned in their slots as shown on the right; the crossed-out version shows an attempt made with the fittings misaligned and must be avoided. After the panels are pushed together, press the joint down at the corner as shown in the lower-right detail to seat the panels; this downward seating press ends at the panels\u2019 final source positions and is therefore not animated in this step. Do not force the panels; if the fittings do not line up, separate, realign and slide again. Watch the hand positions shown in the detail and keep fingers clear of the closing gap.",
+        "source_pages": [
+          8
+        ],
+        "duration_seconds": 4.0,
+        "visible_node_ids": [
+          1,
+          3
+        ],
+        "tracks": [
+          {
+            "node_index": 1,
+            "from_offset_m": [
+              0.0,
+              0.0,
+              0.05
+            ],
+            "to_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "from_rotation_deg": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "to_rotation_deg": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "start_fraction": 0.0,
+            "end_fraction": 0.85
+          }
+        ],
+        "warnings": [
+          "Pinch/crush hazard: the illustration shows hands on the panel edges while the joint closes; keep fingers out of the closing gap and off the connector fittings.",
+          "The upper-left inset explicitly marks a misaligned fitting engagement as wrong (crossed out); engage the fittings in their slots before sliding the panels fully together.",
+          "This motion is an unreviewed geometric proposal, not a verified assembly procedure."
+        ],
+        "uncertainties": [
+          "Mapping of the two illustrated panels: the left panel of the drawing is mapped to side panel node 3 (plane at z \u2248 -0.166 m, parent coordinates) and the right, moving panel to top panel node 1 (horizontal panel whose edge overlaps the side panel by geometry), because nodes 1 and 3 are listed as a large-component contact candidate with bounds gap 0.0 m.",
+          "The drawing does not identify parts by number, so the mirrored alternative side panel node 21 (the opposite side panel) would fit the same picture equally well; node 3 was chosen arbitrarily among the two symmetric side panels.",
+          "The illustrated panels could instead correspond to side panel plus bottom panel (node 2) rather than top panel (node 1); both are equally sized and both are contact candidates with the side panels. This was not resolved from page 8.",
+          "Start displacement of 0.05 m along +Z is an inferred presentation offset only; the manual gives no travel distance or start gap, and the direction (+Z, i.e. sliding the top panel in -Z toward the side panel edge) is inferred from the left-pointing arrow in the lower-left detail rather than from measured geometry.",
+          "The lower-right detail shows a downward press at the corner; that seating motion is not animated because a single track must end at the final zero offset, and no separate press distance is documented.",
+          "Connector hardware visible in the page (cam/dowel fittings such as the 139434, 139435 and 141413 positions in the inventory) is not shown as visible or animated, because the drawing gives no part numbers that can be unambiguously matched to those source nodes.",
+          "Panel orientation during assembly (panels drawn upright in the illustration while the source top panel is horizontal in the finished assembly) is not represented; only the join path in parent coordinates is proposed.",
+          "No torque, turn count or fastener tightening sequence is proposed, because none is readable on the selected page."
+        ]
+      }
+    ]
+  },
+  "validation": "Structure, source hashes, node references, page bounds, and docking endpoints checked. Physical correctness and collision-free paths are not established.",
+  "human_edits": [],
+  "model": "deepseek-flash",
+  "reason": "Page 8 shows a single, unambiguous two-panel joining action: two similar-size flat panels are brought edge to edge and slid together horizontally (left-pointing arrow) so that the protruding connector hardware of one panel enters the keyhole slots of the other, followed by a downward corner press (third inset). The source inventory contains large panels with zero bounds gap in exactly this kind of corner relationship (top panel node 1 / side panel node 3, mirrored alternative node 21), so the panel-to-panel slide can be mapped to source nodes. Only a single start displacement is inferred, since the manual gives no dimensions or travel distance. The second inset (press-down seating) cannot be represented as a separate ending-at-zero motion inside the single allowed step, so it is described but not animated, and all inferred mappings are listed as uncertainties.",
+  "provider_output": "{\"can_propose\": true, \"reason\": \"Page 8 shows a single, unambiguous two-panel joining action: two similar-size flat panels are brought edge to edge and slid together horizontally (left-pointing arrow) so that the protruding connector hardware of one panel enters the keyhole slots of the other, followed by a downward corner press (third inset). The source inventory contains large panels with zero bounds gap in exactly this kind of corner relationship (top panel node 1 / side panel node 3, mirrored alternative node 21), so the panel-to-panel slide can be mapped to source nodes. Only a single start displacement is inferred, since the manual gives no dimensions or travel distance. The second inset (press-down seating) cannot be represented as a separate ending-at-zero motion inside the single allowed step, so it is described but not animated, and all inferred mappings are listed as uncertainties.\", \"plan\": {\"schema_version\": 1, \"product_id\": \"eket-70332124\", \"source_document\": \"AA-1914763-5\", \"model_sha256\": \"726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5\", \"manual_sha256\": \"35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a\", \"coordinate_space\": \"source_node_parent_meters\", \"steps\": [{\"title\": \"Slide top panel onto side panel edge and seat the connector fittings\", \"instruction\": \"Keep the side panel (node 3) in its final position and bring the top panel (node 1) to it horizontally, moving along the parent-coordinate Z direction until the panel edge meets the side panel edge and the protruding connector hardware engages the keyhole slots, as shown in the large drawing and the lower-left detail (left-pointing arrow). Follow the upper-left inset: the fittings must be aligned in their slots as shown on the right; the crossed-out version shows an attempt made with the fittings misaligned and must be avoided. After the panels are pushed together, press the joint down at the corner as shown in the lower-right detail to seat the panels; this downward seating press ends at the panels\\u2019 final source positions and is therefore not animated in this step. Do not force the panels; if the fittings do not line up, separate, realign and slide again. Watch the hand positions shown in the detail and keep fingers clear of the closing gap.\", \"source_pages\": [8], \"duration_seconds\": 4.0, \"visible_node_ids\": [1, 3], \"tracks\": [{\"node_index\": 1, \"from_offset_m\": [0.0, 0.0, 0.05], \"to_offset_m\": [0.0, 0.0, 0.0], \"from_rotation_deg\": [0.0, 0.0, 0.0], \"to_rotation_deg\": [0.0, 0.0, 0.0], \"start_fraction\": 0.0, \"end_fraction\": 0.85}], \"warnings\": [\"Pinch/crush hazard: the illustration shows hands on the panel edges while the joint closes; keep fingers out of the closing gap and off the connector fittings.\", \"The upper-left inset explicitly marks a misaligned fitting engagement as wrong (crossed out); engage the fittings in their slots before sliding the panels fully together.\", \"This motion is an unreviewed geometric proposal, not a verified assembly procedure.\"], \"uncertainties\": [\"Mapping of the two illustrated panels: the left panel of the drawing is mapped to side panel node 3 (plane at z \\u2248 -0.166 m, parent coordinates) and the right, moving panel to top panel node 1 (horizontal panel whose edge overlaps the side panel by geometry), because nodes 1 and 3 are listed as a large-component contact candidate with bounds gap 0.0 m.\", \"The drawing does not identify parts by number, so the mirrored alternative side panel node 21 (the opposite side panel) would fit the same picture equally well; node 3 was chosen arbitrarily among the two symmetric side panels.\", \"The illustrated panels could instead correspond to side panel plus bottom panel (node 2) rather than top panel (node 1); both are equally sized and both are contact candidates with the side panels. This was not resolved from page 8.\", \"Start displacement of 0.05 m along +Z is an inferred presentation offset only; the manual gives no travel distance or start gap, and the direction (+Z, i.e. sliding the top panel in -Z toward the side panel edge) is inferred from the left-pointing arrow in the lower-left detail rather than from measured geometry.\", \"The lower-right detail shows a downward press at the corner; that seating motion is not animated because a single track must end at the final zero offset, and no separate press distance is documented.\", \"Connector hardware visible in the page (cam/dowel fittings such as the 139434, 139435 and 141413 positions in the inventory) is not shown as visible or animated, because the drawing gives no part numbers that can be unambiguously matched to those source nodes.\", \"Panel orientation during assembly (panels drawn upright in the illustration while the source top panel is horizontal in the finished assembly) is not represented; only the join path in parent coordinates is proposed.\", \"No torque, turn count or fastener tightening sequence is proposed, because none is readable on the selected page.\"]}]}}",
+  "geometry_review": {
+    "issues": [],
+    "checks": [
+      {
+        "step": 1,
+        "moving_node": 1,
+        "nearest_visible_large_node": 3,
+        "final_bounds_gap_m": 0.0
+      }
+    ],
+    "scope": "AABB proximity only, for components at least 0.1 m wide sharing a parent frame, using a 0.02 m threshold. This does not establish mating features, collision-free paths, or correctness."
+  }
+}

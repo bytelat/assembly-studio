@@ -1,0 +1,11 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "Corrected thin-panel mapping: moving node 4 is the approximately 2.5 mm back panel; node 2 is no longer used for the groove-insertion action. This mapping was supplied as separately recorded assistant-reviewed evidence, not independently discovered by the provider.",
+    "Two in-plane keyframe segments approach from the open negative-parent-Y side, with prior panels 1, 3 and 21 retained. The intermediate and initial distances are inferred presentation gaps, not measured manual dimensions.",
+    "Groove engagement, collision freedom, source-to-working orientation and prior step-1 seating remain unverified. This is a diagnostic draft, not accepted assembly guidance.",
+    "The provider statement that all three stationary panels contact each other is overbroad: opposite side panels 3 and 21 do not contact each other. No instruction text has been edited."
+  ]
+}

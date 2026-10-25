@@ -1,0 +1,10 @@
+{
+  "decision": "not_accepted",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "Node 2 is the remaining outer panel, but the proposed positive-parent-Y start puts it inside the existing four-panel body. The path overlaps the back panel before docking.",
+    "A sampled translation-only AABB check now flags overlap with node 4 greater than final seating overlap; this corroborates the incorrect interior approach but is not a complete collision test.",
+    "The screen-down arrow does not establish parent -Y motion. Approach the open negative-parent-Y outside face; exact seating path and working orientation remain uncertain."
+  ]
+}

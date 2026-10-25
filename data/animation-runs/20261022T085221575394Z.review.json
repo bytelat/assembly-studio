@@ -1,0 +1,11 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "Source nodes 12 and 19 match the two 141414 labels on printed step 9. The proposal retains all previously placed components and approaches the two rear fittings from outside negative parent X.",
+    "This is only axial approach/seating. The printed turning action is explicitly unrepresented; the model did not invent torque, thread pitch or a turn count. Do not label this a complete animation of step 9.",
+    "Exact engagement and insertion distances are inferred; small-fitting collisions are not covered by the large-panel AABB screen. Step 8 drilling remains manual-only and no wall or optional legs were invented.",
+    "The alternative branch to page 18 remains in the source and is not prescribed by this draft."
+  ]
+}

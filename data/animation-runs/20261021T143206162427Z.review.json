@@ -1,0 +1,9 @@
+{
+  "decision": "partial_candidate_for_visual_review",
+  "reviewer": "coding assistant source/manual comparison",
+  "human_instruction_edits": false,
+  "reasons": [
+    "The proposed large panels form a corner and contact in their final source positions, unlike the first failed draft.",
+    "Only the slide is animated. Exact panel identity, working orientation, and the subsequent seating press remain unresolved; this is not verified assembly guidance."
+  ]
+}
