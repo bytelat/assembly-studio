@@ -1,0 +1,125 @@
+{
+  "origin": "source-label audit against assistant-transcribed manual page 7",
+  "families": [
+    {
+      "part_number": "139434",
+      "quantity": 4,
+      "manual_step": 6,
+      "manual_page": 11,
+      "display_name": "Back-panel holder",
+      "playback_instruction": "Fit the four holders and their matching pins; compare all three close-ups on manual page 11.",
+      "source_node_ids": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "source_quantity": 4,
+      "quantity_matches": true,
+      "first_visible_step": 6,
+      "animated_in_steps": [
+        6
+      ]
+    },
+    {
+      "part_number": "139435",
+      "quantity": 4,
+      "manual_step": 6,
+      "manual_page": 11,
+      "display_name": "Back-panel pin",
+      "playback_instruction": "Press the matching pins into the holders as illustrated on manual page 11.",
+      "source_node_ids": [
+        11,
+        13,
+        15,
+        17
+      ],
+      "source_quantity": 4,
+      "quantity_matches": true,
+      "first_visible_step": 6,
+      "animated_in_steps": [
+        6
+      ]
+    },
+    {
+      "part_number": "141413",
+      "quantity": 2,
+      "manual_step": 7,
+      "manual_page": 14,
+      "display_name": "Rear bracket",
+      "playback_instruction": "Fit the two rear brackets at the locations shown on manual page 14.",
+      "source_node_ids": [
+        5,
+        10
+      ],
+      "source_quantity": 2,
+      "quantity_matches": true,
+      "first_visible_step": 7,
+      "animated_in_steps": [
+        7
+      ]
+    },
+    {
+      "part_number": "141414",
+      "quantity": 2,
+      "manual_step": 9,
+      "manual_page": 16,
+      "display_name": "Adjustment piece",
+      "playback_instruction": "Approach the rear fitting. The printed turning action is not animated; follow manual page 16.",
+      "source_node_ids": [
+        12,
+        19
+      ],
+      "source_quantity": 2,
+      "quantity_matches": true,
+      "first_visible_step": 9,
+      "animated_in_steps": [
+        9
+      ]
+    },
+    {
+      "part_number": "152651",
+      "quantity": 2,
+      "manual_step": 11,
+      "manual_page": 19,
+      "display_name": "Washer",
+      "playback_instruction": "Position the washer in the orientation shown on manual page 19. Wall screws and wall fastening are not animated.",
+      "source_node_ids": [
+        14,
+        20
+      ],
+      "source_quantity": 2,
+      "quantity_matches": true,
+      "first_visible_step": 11,
+      "animated_in_steps": [
+        11
+      ]
+    },
+    {
+      "part_number": "152650",
+      "quantity": 2,
+      "manual_step": 11,
+      "manual_page": 19,
+      "display_name": "Cover",
+      "playback_instruction": "Fit the cover only after the cabinet is secured according to manual page 19. Cover turning/locking is not animated.",
+      "source_node_ids": [
+        16,
+        18
+      ],
+      "source_quantity": 2,
+      "quantity_matches": true,
+      "first_visible_step": 11,
+      "animated_in_steps": [
+        11
+      ]
+    }
+  ],
+  "manual_loose_piece_count": 16,
+  "matched_source_piece_count": 16,
+  "unmatched_source_hardware_ids": [],
+  "limitations": [
+    "A matching named-node inventory does not validate fitting engagement or physical completeness.",
+    "Unnumbered panel-joint features are not separate named hardware nodes and are not independently animated.",
+    "Wall screws, drill/tools and optional supports are not modelled."
+  ]
+}

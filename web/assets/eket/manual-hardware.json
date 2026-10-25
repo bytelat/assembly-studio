@@ -1,0 +1,55 @@
+{
+  "origin": "assistant transcription of original manual page 7",
+  "model_sha256": "726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5",
+  "manual_sha256": "35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a",
+  "parts": [
+    {
+      "part_number": "139434",
+      "quantity": 4,
+      "manual_step": 6,
+      "manual_page": 11,
+      "display_name": "Back-panel holder",
+      "playback_instruction": "Fit the four holders and their matching pins; compare all three close-ups on manual page 11."
+    },
+    {
+      "part_number": "139435",
+      "quantity": 4,
+      "manual_step": 6,
+      "manual_page": 11,
+      "display_name": "Back-panel pin",
+      "playback_instruction": "Press the matching pins into the holders as illustrated on manual page 11."
+    },
+    {
+      "part_number": "141413",
+      "quantity": 2,
+      "manual_step": 7,
+      "manual_page": 14,
+      "display_name": "Rear bracket",
+      "playback_instruction": "Fit the two rear brackets at the locations shown on manual page 14."
+    },
+    {
+      "part_number": "141414",
+      "quantity": 2,
+      "manual_step": 9,
+      "manual_page": 16,
+      "display_name": "Adjustment piece",
+      "playback_instruction": "Approach the rear fitting. The printed turning action is not animated; follow manual page 16."
+    },
+    {
+      "part_number": "152651",
+      "quantity": 2,
+      "manual_step": 11,
+      "manual_page": 19,
+      "display_name": "Washer",
+      "playback_instruction": "Position the washer in the orientation shown on manual page 19. Wall screws and wall fastening are not animated."
+    },
+    {
+      "part_number": "152650",
+      "quantity": 2,
+      "manual_step": 11,
+      "manual_page": 19,
+      "display_name": "Cover",
+      "playback_instruction": "Fit the cover only after the cabinet is secured according to manual page 19. Cover turning/locking is not animated."
+    }
+  ]
+}

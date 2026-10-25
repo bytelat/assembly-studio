@@ -1,0 +1,190 @@
+{
+  "origin": "assistant_authored_manual_motion",
+  "manual_sha256": "35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a",
+  "model_sha256": "726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5",
+  "evidence": [
+    "Original manual page 19 identifies two 152651 washers followed by two 152650 covers, with wall screws between those operations.",
+    "Source nodes 14/20 are washers; 16/18 are covers. Their thin axis is parent X and their faces extend toward positive X from the rear panel.",
+    "Only original source geometry is moved. No wall, screw, embedded connector or new shape is created."
+  ],
+  "steps": [
+    {
+      "kind": "motion",
+      "printed_step": 11,
+      "title": "Fit the two washers, then the two covers",
+      "instruction": "Authored visualization of the four supplied parts in printed step 11: seat both 152651 washers, then bring both 152650 covers into place. The pause between them marks omitted wall fastening, not a completed fixing. Follow the original wall-fixing instructions before fitting covers.",
+      "source_pages": [
+        19
+      ],
+      "duration_seconds": 12,
+      "visible_node_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "tracks": [
+        {
+          "node_index": 14,
+          "keyframes": [
+            {
+              "fraction": 0.05,
+              "offset_m": [
+                0.065,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 0.25,
+              "offset_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "node_index": 20,
+          "keyframes": [
+            {
+              "fraction": 0.28,
+              "offset_m": [
+                0.065,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 0.48,
+              "offset_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "node_index": 16,
+          "keyframes": [
+            {
+              "fraction": 0.65,
+              "offset_m": [
+                0.11,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 0.8,
+              "offset_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "node_index": 18,
+          "keyframes": [
+            {
+              "fraction": 0.83,
+              "offset_m": [
+                0.11,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 0.98,
+              "offset_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Authored motion draft, not AI-generated or physically verified.",
+        "The wall and wall screws are absent. This animation does not demonstrate or verify wall attachment.",
+        "Follow the original tip-over warning. Do not treat fitted covers as evidence that the cabinet is secured."
+      ],
+      "uncertainties": [
+        "Positive parent-X approach is inferred from source geometry: washer/cover faces lie toward the open cabinet, ahead of the rear fittings.",
+        "Travel distances and timing are illustrative. Washer notch alignment uses the original source orientation; cap turning/locking and fastening are not animated."
+      ]
+    }
+  ],
+  "playback_cues": {
+    "11": [
+      {
+        "start": 0.48,
+        "end": 0.65,
+        "title": "Wall fastening \u2014 not shown",
+        "detail": "The manual places wall screws between the washers and covers. This pause does not demonstrate fastening. Secure the cabinet according to the original manual before fitting covers."
+      }
+    ]
+  }
+}

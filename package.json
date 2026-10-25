@@ -1,0 +1,14 @@
+{
+  "name": "assembly-studio-viewer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor": "node scripts/vendor-three.mjs",
+    "test:browser": "playwright test",
+    "build:viewer": "node scripts/bundle-viewer.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "three": "0.180.0"
+  }
+}

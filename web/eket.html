@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EKET cabinet — Assembly Studio</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="importmap">{"imports":{"three":"/vendor/three/build/three.module.js","three/addons/":"/vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header><a class="brand" href="/">a<span class="brand-dot">.</span> <span>assembly studio</span></a><span class="header-label">EXPLORE THE SOURCE DATA</span><span class="version">RESEARCH PREVIEW</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">A DIFFERENT PRODUCT, THE ORIGINAL PARTS</p><h1>Meet <em>EKET.</em></h1><p class="lede">A small cabinet from the same IKEA dataset.<br>Rotate the original model and inspect its components.</p></div></section>
+    <nav class="product-picker" aria-label="Products"><a href="/">LACK side table</a><a href="/eket.html" aria-current="page">EKET cabinet</a><a href="/dalfred.html">DALFRED bar stool</a></nav>
+    <section class="guide-start" aria-label="Complete manual navigator">
+      <div><h2>Follow all 11 manual steps</h2><p id="guide-coverage">Original diagrams for every step, with experimental 3D motion where available.</p></div>
+      <a class="simple-guide-link" href="/eket-steps">Open all steps without 3D →</a><button id="load-full-guide" class="primary">Open all 11 steps</button>
+      <button id="start-all-steps" class="primary" disabled>▶ Play all 11 steps</button><p id="guide-load-status" role="status"></p>
+    </section>
+    <section class="hardware-inspector" aria-label="Small parts inspector">
+      <h2>Inspect the small parts</h2>
+      <p id="hardware-summary">Comparing source parts with the manual inventory…</p>
+      <label for="inspect-part">Enlarge one source part</label>
+      <select id="inspect-part" disabled><option value="">Choose a part…</option></select>
+      <button id="exit-inspection" hidden>Return to assembly</button>
+      <p id="hardware-status" role="status">Selecting a part isolates it for inspection; this is not an assembly animation.</p>
+      <a id="hardware-manual-link" href="/assets/eket/manual.pdf#page=7" target="_blank" rel="noopener">Open original hardware inventory ↗</a>
+      <details><summary>Which parts appear in the animation?</summary><div class="table-scroll"><table><thead><tr><th>Part number</th><th>Manual / model</th><th>Animation coverage</th></tr></thead><tbody id="hardware-coverage-list"></tbody></table></div><p class="hint">Panel-joint features have no separate named hardware nodes. Their individual engagement is not animated. Wall screws, tools and optional supports are not modelled.</p></details>
+    </section>
+    <div class="workspace eket-workspace">
+      <div class="viewer-wrap"><div class="viewer-heading"><span id="viewer-mode" class="pill">ORIGINAL 3D MODEL</span><span class="sample-label">EKET · 70332124</span></div><div id="viewer" aria-label="Interactive original EKET cabinet model. Drag to rotate and scroll to zoom." tabindex="0"><div id="hardware-detail-label" hidden></div></div><div id="viewer-playback" class="viewer-playback" hidden><section id="hardware-playback" class="hardware-playback" aria-label="Small-part animation instructions" hidden><strong id="hardware-action-title"></strong><p id="hardware-action-detail"></p><div id="hardware-action-list" aria-label="Replay a small-part action"></div><label class="live-closeup-toggle"><input id="hardware-live-closeup" type="checkbox" checked> Live part close-ups</label><button id="hardware-closeup">Close-up of current part</button><button id="hardware-wide">Show whole cabinet</button></section><p id="sequence-status" class="sequence-status" hidden></p><div class="lab-playback"><button id="plan-play-all" aria-pressed="false">▶ Play all steps</button><button id="plan-previous" disabled>← Previous</button><button id="plan-play" disabled>▶ Play</button><button id="plan-next" disabled>Next →</button><button id="plan-assembled">Show original assembled model</button></div><input id="plan-scrub" type="range" min="0" max="1000" value="0" aria-label="Generated animation position" disabled></div><div id="viewer-error" role="status">Loading the EKET source model…</div><div class="viewer-bottom"><span>DRAG TO ROTATE · SCROLL TO ZOOM</span><button id="reset">↺ &nbsp; Reset view</button></div></div>
+      <aside><div id="active-step-panel" hidden><p id="active-plan-origin" class="warning"></p><label class="step-picker-label" for="guide-step-picker">Go to a step</label><select id="guide-step-picker" aria-label="Choose assembly step"></select><h2 id="active-step-title"></h2><p id="active-step-instruction" class="hint"></p><p id="active-step-source" class="hint"></p><ul id="active-step-notices" class="hint"></ul><a id="active-manual-link" target="_blank" rel="noopener"><img id="active-manual-image" alt="Original manual diagram for the selected step"><span>Enlarge original diagram ↗</span></a><p class="hint">For support and mounting choices, also read <a href="/assets/eket/manual.pdf#page=12" target="_blank" rel="noopener">pages 12–13</a> and <a href="/assets/eket/manual.pdf#page=18" target="_blank" rel="noopener">page 18</a>.</p></div><div id="source-model-summary"><p class="eyebrow">IKEA DATASET / SECOND PRODUCT</p><h2>EKET small cabinet</h2><p class="lede">White · 35 × 25 × 35 cm<br>Article 70332124</p><div class="part-card"><span class="part-icon">▣</span><div><span class="small-label">IN THE SOURCE MODEL</span><strong id="component-count">Inspecting components…</strong></div></div><p class="hint">This is existing IKEA geometry. The experiment below can propose motion for these parts from a selected manual page; it does not generate new 3D shapes.</p><a class="primary" href="/assets/eket/manual.pdf" target="_blank" rel="noopener">Open original manual ↗</a><p class="hint">Manual AA-1914763-5 · 20 pages</p><a href="/assets/eket/reference.json" target="_blank" rel="noopener">View source metadata ↗</a></div></aside>
+    </div>
+    <section class="animation-lab" aria-label="Manual to animation experiment">
+      <p class="eyebrow">THE GENERAL ENGINE EXPERIMENT</p><h2>One manual step → motion data → interactive playback.</h2>
+      <p>Generate an unreviewed draft with DeepSeek, or explicitly load a hand-authored fixture to test the player. These are different operations.</p>
+      <div class="lab-controls"><label>Manual PDF page <input id="generation-page" type="number" min="1" max="20" value="8"></label><label>Printed step/action <input id="generation-action" value="1" maxlength="100"></label><label><input id="use-previous-plan" type="checkbox"> Continue loaded draft (tentative context)</label><button id="generate-plan" class="primary" disabled>Generate one step with DeepSeek</button><button id="load-saved-sequence">Load two-step diagnostic draft (no API call)</button><button id="load-saved-plan">Load saved AI test (no new API call)</button><button id="load-fixture">Load hand-authored player fixture</button><button id="load-v2-fixture">Load v2 engine test (hand-authored)</button></div>
+      <p id="generation-status" class="hint" role="status" aria-live="polite">Checking DeepSeek configuration…</p>
+      <p class="disclosure">Generation sends the selected page, warning/inventory context pages, and model-node inventory to DeepSeek. It uses API balance. It may decline when part identity or motion is uncertain.</p>
+      <div class="lab-columns"><div><a id="selected-page-link" href="/assets/eket/manual-page-8.png" target="_blank" rel="noopener"><img id="selected-page-image" src="/assets/eket/manual-page-8.png" alt="Selected original manual page 8" loading="lazy"></a><p class="hint">Original manual page <span id="selected-page-number">8</span> · click to enlarge</p></div>
+      <div><div id="draft-details" hidden><p id="draft-origin" class="warning"></p><h3 id="draft-title"></h3><p id="draft-instruction"></p><p id="draft-source" class="hint"></p><ul id="draft-warnings"></ul><ul id="draft-uncertainties"></ul><p id="draft-edits" class="hint"></p><p id="draft-validation" class="disclosure"></p><button id="preview-plan">Preview this unreviewed plan</button><button id="download-plan">Download plan & provenance</button></div><p id="player-status" role="status">Viewing the original assembled model. No animation plan loaded.</p></div></div>
+      <details><summary>Inspect or edit the reusable motion JSON</summary><p class="hint">Applying edited JSON labels it as imported. Geometry identifiers and source checksums must match. This does not certify the motion.</p><textarea id="plan-json" aria-label="Animation plan JSON" rows="16" spellcheck="false"></textarea><button id="validate-plan">Validate and preview edited JSON</button><a href="/api/animation/schema" target="_blank" rel="noopener">Format schema ↗</a></details>
+    </section>
+    <p class="disclosure">Original model © Inter IKEA Systems B.V. · <a href="/assets/eket/LICENSE.md">CC BY-NC-SA 4.0</a> · Noncommercial research preview. Model components and labels have been inspected; physical inventory and assembly have not been verified.</p>
+    <section class="source-panel"><a href="/assets/eket/manual.pdf" target="_blank" rel="noopener"><img src="/assets/eket/manual-page-1.png" alt="Cover of the original EKET assembly manual"><span>Read all 20 pages ↗</span></a><div><p class="eyebrow">WHAT THE FILE ACTUALLY CONTAINS</p><h2>Original component labels</h2><p>These are the component names in IKEA's model. Counts describe the digital file.</p><div class="table-scroll"><table><thead><tr><th>Source label</th><th>Model nodes</th></tr></thead><tbody id="component-list"></tbody></table></div><p class="disclosure"><a href="https://github.com/IKEA/IKEA3DAssemblyDataset/tree/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/Dataset/EKET_70332124_35x25x35" target="_blank" rel="noopener">Original IKEA source folder ↗</a></p></div></section>
+    <footer><span>EXPLORE FIRST. VERIFY BEFORE GUIDING.</span><span>Assembly Studio / Dataset explorer</span></footer>
+  </main>
+  <script>
+    // Runs independently so a stalled module download cannot leave a permanent spinner.
+    setTimeout(() => {
+      if (window.eketEntryStarted) return;
+      const status = document.getElementById('viewer-error');
+      status.textContent = 'The page opened, but its viewer script did not load through the forwarded connection.';
+      const retry = document.createElement('button');
+      retry.textContent = 'Retry loading';
+      retry.onclick = () => { const url = new URL(location.href); url.searchParams.set('reload', Date.now()); location.replace(url); };
+      status.append(document.createElement('br'), retry);
+      fetch('/api/viewer-diagnostics', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ stage: 'module', message: 'EKET entry script did not start within 25 seconds' }) }).catch(() => {});
+    }, 25000);
+  </script>
+  <script type="module" src="/eket.js?v=full-manual-guide-1"></script>
+</body>
+</html>

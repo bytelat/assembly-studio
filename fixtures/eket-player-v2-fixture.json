@@ -1,0 +1,206 @@
+{
+  "schema_version": 2,
+  "product_id": "eket-70332124",
+  "source_document": "AA-1914763-5",
+  "model_sha256": "726345b71e8b88e288386e5b2cb947ac03416201eabf3c0722fad1c75226f9b5",
+  "manual_sha256": "35bcd6ee94b494637ee6ca82f839516168339240ed6214ebb6cae5137bf8938a",
+  "coordinate_space": "source_node_parent_meters",
+  "steps": [
+    {
+      "title": "V2 fixture: slide then seat to an intermediate pose",
+      "instruction": "Hand-authored engine test only. Demonstrates two path segments and an unfinished endpoint; not assembly guidance.",
+      "source_pages": [
+        9
+      ],
+      "duration_seconds": 4.0,
+      "visible_node_ids": [
+        2,
+        3,
+        4,
+        21
+      ],
+      "tracks": [
+        {
+          "node_index": 4,
+          "keyframes": [
+            {
+              "fraction": 0,
+              "offset_m": [
+                0,
+                -0.12,
+                0.02
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 0.65,
+              "offset_m": [
+                0,
+                0,
+                0.02
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 1,
+              "offset_m": [
+                0,
+                0,
+                0.01
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Fixture only; do not use it as real assembly guidance."
+      ],
+      "uncertainties": [
+        "Page 9 is provided for comparison; the fixture path was chosen by the developer, not extracted or physically validated."
+      ]
+    },
+    {
+      "title": "V2 fixture: finish the retained movement",
+      "instruction": "Hand-authored engine test only. Demonstrates two path segments and an unfinished endpoint; not assembly guidance.",
+      "source_pages": [
+        9
+      ],
+      "duration_seconds": 4.0,
+      "visible_node_ids": [
+        2,
+        3,
+        4,
+        21
+      ],
+      "tracks": [
+        {
+          "node_index": 4,
+          "keyframes": [
+            {
+              "fraction": 0,
+              "offset_m": [
+                0,
+                0,
+                0.01
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "fraction": 1,
+              "offset_m": [
+                0,
+                0,
+                0
+              ],
+              "rotation_deg": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Fixture only; do not use it as real assembly guidance."
+      ],
+      "uncertainties": [
+        "Page 9 is provided for comparison; the fixture path was chosen by the developer, not extracted or physically validated."
+      ]
+    },
+    {
+      "title": "V2 fixture: rotate the assembled group",
+      "instruction": "Hand-authored engine test only. Demonstrates two path segments and an unfinished endpoint; not assembly guidance.",
+      "source_pages": [
+        9
+      ],
+      "duration_seconds": 4.0,
+      "visible_node_ids": [
+        2,
+        3,
+        4,
+        21
+      ],
+      "tracks": [],
+      "warnings": [
+        "Fixture only; do not use it as real assembly guidance."
+      ],
+      "uncertainties": [
+        "Page 9 is provided for comparison; the fixture path was chosen by the developer, not extracted or physically validated."
+      ],
+      "assembly_keyframes": [
+        {
+          "fraction": 0,
+          "offset_m": [
+            0,
+            0,
+            0
+          ],
+          "rotation_deg": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "fraction": 1,
+          "offset_m": [
+            0,
+            0,
+            0
+          ],
+          "rotation_deg": [
+            0,
+            0,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "title": "V2 fixture: hold the rotated group",
+      "instruction": "Hand-authored engine test: the whole group stays rotated while navigating. No movement in this entry.",
+      "source_pages": [
+        9
+      ],
+      "duration_seconds": 4.0,
+      "visible_node_ids": [
+        2,
+        3,
+        4,
+        21
+      ],
+      "tracks": [],
+      "warnings": [
+        "Fixture only; do not use it as real assembly guidance."
+      ],
+      "uncertainties": [
+        "Page 9 is provided for comparison; the fixture path was chosen by the developer, not extracted or physically validated."
+      ],
+      "assembly_keyframes": [],
+      "kind": "manual_reference"
+    }
+  ],
+  "assembly_pivot_m": [
+    0,
+    0,
+    0
+  ]
+}

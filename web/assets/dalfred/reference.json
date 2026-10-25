@@ -1,0 +1,220 @@
+{
+  "product": "IKEA DALFRED bar stool, black",
+  "article_number": "60155602",
+  "manual_document": "AA-399492-11",
+  "manual_pages": 8,
+  "upstream_commit": "2c3f453a7ed7e3a056939ecca6a888ccfaf5695c",
+  "license": "CC BY-NC-SA 4.0",
+  "copyright": "Inter IKEA Systems B.V.",
+  "files": {
+    "model.glb": {
+      "sha256": "e398a7082d769cf9108869a651da74cb37856bc06bb373c1fda5b4bc361d0775",
+      "url": "https://raw.githubusercontent.com/IKEA/IKEA3DAssemblyDataset/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/Dataset/DALFRED_60155602/glTF_glb/DALFRED_60155602.glb"
+    },
+    "manual.pdf": {
+      "sha256": "d22ab89d99eb182433620932d1524c55ed39f77493cbcfcd2fee0a124c3a41d9",
+      "url": "https://raw.githubusercontent.com/IKEA/IKEA3DAssemblyDataset/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/Dataset/DALFRED_60155602/pdf_documentation/AA-399492-11.pdf"
+    }
+  },
+  "parts": [
+    {
+      "node_index": 1,
+      "node_name": "circle upp_54617",
+      "category": "structure",
+      "mesh_index": 0
+    },
+    {
+      "node_index": 2,
+      "node_name": "circle down_54618",
+      "category": "structure",
+      "mesh_index": 1
+    },
+    {
+      "node_index": 3,
+      "node_name": "leg1_53381",
+      "category": "structure",
+      "mesh_index": 2
+    },
+    {
+      "node_index": 4,
+      "node_name": "leg1_53382",
+      "category": "structure",
+      "mesh_index": 3
+    },
+    {
+      "node_index": 5,
+      "node_name": "leg1_53383",
+      "category": "structure",
+      "mesh_index": 4
+    },
+    {
+      "node_index": 6,
+      "node_name": "leg1_53384",
+      "category": "structure",
+      "mesh_index": 5
+    },
+    {
+      "node_index": 7,
+      "node_name": "pole-01131297_-1241255",
+      "category": "structure",
+      "mesh_index": 6
+    },
+    {
+      "node_index": 8,
+      "node_name": "cone with plate_55167",
+      "category": "structure",
+      "mesh_index": 7
+    },
+    {
+      "node_index": 9,
+      "node_name": "footrest ring_59555",
+      "category": "structure",
+      "mesh_index": 8
+    },
+    {
+      "node_index": 10,
+      "node_name": "Support pin-1214213",
+      "category": "structure",
+      "mesh_index": 9
+    },
+    {
+      "node_index": 11,
+      "node_name": "105251_01",
+      "category": "hardware",
+      "mesh_index": 10
+    },
+    {
+      "node_index": 12,
+      "node_name": "105251_02",
+      "category": "hardware",
+      "mesh_index": 11
+    },
+    {
+      "node_index": 13,
+      "node_name": "105251_03",
+      "category": "hardware",
+      "mesh_index": 12
+    },
+    {
+      "node_index": 14,
+      "node_name": "105251_04",
+      "category": "hardware",
+      "mesh_index": 13
+    },
+    {
+      "node_index": 15,
+      "node_name": "105251_05",
+      "category": "hardware",
+      "mesh_index": 14
+    },
+    {
+      "node_index": 16,
+      "node_name": "105251_06",
+      "category": "hardware",
+      "mesh_index": 15
+    },
+    {
+      "node_index": 17,
+      "node_name": "105251_07",
+      "category": "hardware",
+      "mesh_index": 16
+    },
+    {
+      "node_index": 18,
+      "node_name": "105251_08",
+      "category": "hardware",
+      "mesh_index": 17
+    },
+    {
+      "node_index": 19,
+      "node_name": "100212_04",
+      "category": "hardware",
+      "mesh_index": 18
+    },
+    {
+      "node_index": 20,
+      "node_name": "100212_03",
+      "category": "hardware",
+      "mesh_index": 19
+    },
+    {
+      "node_index": 21,
+      "node_name": "100212_02",
+      "category": "hardware",
+      "mesh_index": 20
+    },
+    {
+      "node_index": 22,
+      "node_name": "100212_01",
+      "category": "hardware",
+      "mesh_index": 21
+    },
+    {
+      "node_index": 23,
+      "node_name": "108443_05",
+      "category": "hardware",
+      "mesh_index": 22
+    },
+    {
+      "node_index": 24,
+      "node_name": "108443_04",
+      "category": "hardware",
+      "mesh_index": 23
+    },
+    {
+      "node_index": 25,
+      "node_name": "108443_03",
+      "category": "hardware",
+      "mesh_index": 24
+    },
+    {
+      "node_index": 26,
+      "node_name": "108443_02",
+      "category": "hardware",
+      "mesh_index": 25
+    },
+    {
+      "node_index": 27,
+      "node_name": "108443_01",
+      "category": "hardware",
+      "mesh_index": 26
+    },
+    {
+      "node_index": 28,
+      "node_name": "105298_04",
+      "category": "hardware",
+      "mesh_index": 27
+    },
+    {
+      "node_index": 29,
+      "node_name": "105298_03",
+      "category": "hardware",
+      "mesh_index": 28
+    },
+    {
+      "node_index": 30,
+      "node_name": "105298_02",
+      "category": "hardware",
+      "mesh_index": 29
+    },
+    {
+      "node_index": 31,
+      "node_name": "105298_01",
+      "category": "hardware",
+      "mesh_index": 30
+    },
+    {
+      "node_index": 32,
+      "node_name": "107675_01",
+      "category": "hardware",
+      "mesh_index": 31
+    },
+    {
+      "node_index": 33,
+      "node_name": "seat_55117",
+      "category": "structure",
+      "mesh_index": 32
+    }
+  ],
+  "review_status": "Original source geometry; assistant-authored partial motion drafts, not physically verified"
+}

@@ -1,0 +1,353 @@
+{
+  "product": "IKEA LACK side table, white, 55 \u00d7 55 cm",
+  "article_number": "30449908",
+  "manual_document": "AA-207276-4",
+  "upstream_commit": "2c3f453a7ed7e3a056939ecca6a888ccfaf5695c",
+  "units": "meters",
+  "license": "CC BY-NC-SA 4.0",
+  "copyright": "Inter IKEA Systems B.V.",
+  "review_status": "Checked against supplied model and manual; not physically tested",
+  "files": {
+    "model.glb": {
+      "url": "https://raw.githubusercontent.com/IKEA/IKEA3DAssemblyDataset/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/Dataset/LACK_30449908_55x55/glTF_glb/LACK_30449908_55x55.glb",
+      "sha256": "0bdad967809a1cc5c0d7916a034eeafa4e2d569061c863969fa58b60d52b8e24"
+    },
+    "manual.pdf": {
+      "url": "https://raw.githubusercontent.com/IKEA/IKEA3DAssemblyDataset/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/Dataset/LACK_30449908_55x55/pdf_documentation/AA-207276-4.pdf",
+      "sha256": "5f8ae60c8e7ac6707df08bcc49b2a5322839153f40c317948d70ab9e5f446025"
+    },
+    "LICENSE.md": {
+      "url": "https://raw.githubusercontent.com/IKEA/IKEA3DAssemblyDataset/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/LICENSE.md",
+      "sha256": "1349a4b6148492b44f629e64eed676612e234fe9a839e4f3b277c1482c8849f1"
+    },
+    "UPSTREAM-README.md": {
+      "url": "https://raw.githubusercontent.com/IKEA/IKEA3DAssemblyDataset/2c3f453a7ed7e3a056939ecca6a888ccfaf5695c/README.md",
+      "sha256": "d5274ca1b421351499390c2e1c697f4201d0a7b5d3b88e162083a6930f453c03"
+    }
+  },
+  "parts": [
+    {
+      "id": "node-1",
+      "node_index": 1,
+      "node_name": "table top_00167769",
+      "category": "top",
+      "mesh_index": 0,
+      "mesh_local_dimensions_m": [
+        0.55,
+        0.55,
+        0.049
+      ],
+      "translation": [
+        0.0,
+        0.200000018,
+        -1.525879e-08
+      ],
+      "rotation": [
+        -0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_page": null,
+      "evidence": "GLB node; manual illustrates component without a labeled parts inventory"
+    },
+    {
+      "id": "node-2",
+      "node_index": 2,
+      "node_name": "115980_02",
+      "category": "connector",
+      "mesh_index": 1,
+      "mesh_local_dimensions_m": [
+        0.008,
+        0.0079988,
+        0.07
+      ],
+      "translation": [
+        -0.2485,
+        0.176000029,
+        -0.24849999
+      ],
+      "rotation": [
+        -0.49107,
+        -0.508773744,
+        -0.5087734,
+        0.491069436
+      ],
+      "scale": [
+        1.00000012,
+        1.0,
+        1.0
+      ],
+      "source_page": 1,
+      "evidence": "GLB node and manual hardware illustration"
+    },
+    {
+      "id": "node-3",
+      "node_index": 3,
+      "node_name": "115980_03",
+      "category": "connector",
+      "mesh_index": 2,
+      "mesh_local_dimensions_m": [
+        0.008,
+        0.0079988,
+        0.07
+      ],
+      "translation": [
+        0.248500079,
+        0.175999969,
+        0.248499915
+      ],
+      "rotation": [
+        -0.433010966,
+        -0.559018731,
+        -0.559018433,
+        0.43301037
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "source_page": 1,
+      "evidence": "GLB node and manual hardware illustration"
+    },
+    {
+      "id": "node-4",
+      "node_index": 4,
+      "node_name": "115980_04",
+      "category": "connector",
+      "mesh_index": 3,
+      "mesh_local_dimensions_m": [
+        0.008,
+        0.0079988,
+        0.07
+      ],
+      "translation": [
+        0.248499885,
+        0.1759999,
+        -0.248500124
+      ],
+      "rotation": [
+        -0.378154516,
+        -0.597494662,
+        -0.597493947,
+        0.378153771
+      ],
+      "scale": [
+        1.00000012,
+        1.00000012,
+        1.0
+      ],
+      "source_page": 1,
+      "evidence": "GLB node and manual hardware illustration"
+    },
+    {
+      "id": "node-5",
+      "node_index": 5,
+      "node_name": "table leg_00167768_001",
+      "category": "leg",
+      "mesh_index": 4,
+      "mesh_local_dimensions_m": [
+        0.049,
+        0.049,
+        0.4000001
+      ],
+      "translation": [
+        0.248499975,
+        -0.22450003,
+        -0.248500034
+      ],
+      "rotation": [
+        0.707106948,
+        0.0,
+        0.0,
+        0.7071066
+      ],
+      "scale": [
+        0.9999999,
+        0.999999762,
+        0.9999999
+      ],
+      "source_page": null,
+      "evidence": "GLB node; manual illustrates component without a labeled parts inventory"
+    },
+    {
+      "id": "node-6",
+      "node_index": 6,
+      "node_name": "table leg_00167768_005",
+      "category": "leg",
+      "mesh_index": 4,
+      "mesh_local_dimensions_m": [
+        0.049,
+        0.049,
+        0.4000001
+      ],
+      "translation": [
+        -0.248500049,
+        -0.22450003,
+        -0.248500034
+      ],
+      "rotation": [
+        0.707106948,
+        0.0,
+        0.0,
+        0.7071066
+      ],
+      "scale": [
+        0.9999999,
+        0.999999762,
+        0.9999999
+      ],
+      "source_page": null,
+      "evidence": "GLB node; manual illustrates component without a labeled parts inventory"
+    },
+    {
+      "id": "node-7",
+      "node_index": 7,
+      "node_name": "table leg_00167768_006",
+      "category": "leg",
+      "mesh_index": 4,
+      "mesh_local_dimensions_m": [
+        0.049,
+        0.049,
+        0.4000001
+      ],
+      "translation": [
+        -0.2485,
+        -0.22450003,
+        0.2485
+      ],
+      "rotation": [
+        0.707106948,
+        0.0,
+        0.0,
+        0.7071066
+      ],
+      "scale": [
+        0.9999999,
+        0.999999762,
+        0.9999999
+      ],
+      "source_page": null,
+      "evidence": "GLB node; manual illustrates component without a labeled parts inventory"
+    },
+    {
+      "id": "node-8",
+      "node_index": 8,
+      "node_name": "table leg_00167768_007",
+      "category": "leg",
+      "mesh_index": 4,
+      "mesh_local_dimensions_m": [
+        0.049,
+        0.049,
+        0.4000001
+      ],
+      "translation": [
+        0.2485002,
+        -0.22450003,
+        0.248499975
+      ],
+      "rotation": [
+        0.707106948,
+        0.0,
+        0.0,
+        0.7071066
+      ],
+      "scale": [
+        0.9999999,
+        0.999999762,
+        0.9999999
+      ],
+      "source_page": null,
+      "evidence": "GLB node; manual illustrates component without a labeled parts inventory"
+    },
+    {
+      "id": "node-9",
+      "node_index": 9,
+      "node_name": "115980_01",
+      "category": "connector",
+      "mesh_index": 5,
+      "mesh_local_dimensions_m": [
+        0.008,
+        0.0079988,
+        0.07
+      ],
+      "translation": [
+        -0.248500049,
+        0.175999969,
+        0.2485001
+      ],
+      "rotation": [
+        -0.5476929,
+        -0.4472505,
+        -0.447249979,
+        0.5476924
+      ],
+      "scale": [
+        1.0,
+        0.9999999,
+        1.00000012
+      ],
+      "source_page": 1,
+      "evidence": "GLB node and manual hardware illustration"
+    }
+  ],
+  "summary": [
+    {
+      "id": "top",
+      "name": "Tabletop",
+      "quantity": 1,
+      "identifier": "00167769 (model label only)"
+    },
+    {
+      "id": "leg",
+      "name": "Leg",
+      "quantity": 4,
+      "identifier": "00167768 (model label only)"
+    },
+    {
+      "id": "connector",
+      "name": "Double-ended connector",
+      "quantity": 4,
+      "identifier": "115980 (manual hardware number)"
+    }
+  ],
+  "animation": {
+    "top_node": 1,
+    "connector_node": 9,
+    "leg_node": 7,
+    "sequence": "Insert connector into underside of tabletop, then attach leg at that corner.",
+    "connections": [
+      {
+        "connector_node": 9,
+        "leg_node": 7
+      },
+      {
+        "connector_node": 2,
+        "leg_node": 6
+      },
+      {
+        "connector_node": 4,
+        "leg_node": 5
+      },
+      {
+        "connector_node": 3,
+        "leg_node": 8
+      }
+    ],
+    "source_page": 1,
+    "motion_status": "Illustrative paths and rotations; no inferred thread pitch, torque, or turn count"
+  },
+  "uncertainties": [
+    "Only the historical dataset article/manual pairing has been checked; current and regional variants may differ.",
+    "Thread pitch, tightening torque, and required turn count are not specified in the supplied manual.",
+    "Mesh bounds describe the supplied digital geometry, not independent manufacturing measurements.",
+    "No physical assembly or tool-clearance test has been performed.",
+    "The same illustrated connection is repeated at four corners; corner order and motion are authored, not separately specified by the manual."
+  ]
+}
